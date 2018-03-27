@@ -10,7 +10,7 @@ $(function () {
     });
     //Hämta Data
     function getRequest(input) {
-        var url = `http://www.omdbapi.com/?`;
+        var url = `https://www.omdbapi.com/?`;
         var rules = {
             apiKey : `e4cbae2`,
             s : input,
