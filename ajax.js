@@ -30,8 +30,9 @@ $(function () {
     }
 
     function showResults(data) {
-        $.each(data, function(i,value){
-            $('#search-results').append('<p>${value.Title}</p>');
+        $.each(data, function (i, value) {
+            $('#search-results').append(`<p>${value.Title}</p>`);
         })
+    
     }
 });

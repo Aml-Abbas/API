@@ -3,8 +3,6 @@ $(function () {
     $("#search-form").submit(function (e) {
         e.preventDefault();
         var searchTerm = $("#search-input").val();
-
-        
         getRequest(searchTerm);
 
     });
@@ -23,6 +21,8 @@ $(function () {
     }                                     
     // Visa data
     function showResults(data) {
+        $("#search-results").html("");
+
         $.each(data, function (i, value){ 
         $("#search-results").append(`
                 <li> 
