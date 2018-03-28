@@ -6,7 +6,7 @@ $(function () {
     });
 
     function getRequest(input) {
-        var url = `http://www.omdbapi.com/?`;
+        var url = `https://www.omdbapi.com/?`;
         var rules = {
             apiKey: `e4cbae2`,
             s: input,
@@ -30,6 +30,7 @@ $(function () {
     }
 
     function showResults(data) {
+        $("#search-results").html("");
         $.each(data, function (i, value) {
             $('#search-results').append(`<p>${value.Title}</p>`);
         })
